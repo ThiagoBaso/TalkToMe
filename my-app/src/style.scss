@@ -47,6 +47,7 @@ $color1: #4b49e0;
         align-items: center;
         gap: 10px;
         font-weight: 400;
+        cursor: pointer;
     }
 
     .form1 button{
@@ -56,6 +57,7 @@ $color1: #4b49e0;
         font-size: 14px;
         font-weight: 500;  
         background-color: #4c49e0be;
+        cursor: pointer;
     }
     
 }
@@ -74,8 +76,92 @@ $color1: #4b49e0;
         border-radius: 10px;
         width: 65%;
         height: 80%;
+        overflow: hidden;
+
+        .sidebar{
+            flex:1;
+            background-color: #282683;
+
+            .navbar{
+                display: flex;
+                align-items: center;
+                background-color: #201e68;
+                height: 50px;
+                padding: 10px;
+                justify-content: space-between;
+                color: white;
+
+                .logo{
+                    font-weight: bold;
+                }
+
+                .user{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img{
+                        background-color: white;
+                        height: 24px;
+                        width: 24px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    button{
+                        padding: 10px;
+                        border-radius: 5px;
+                        border: none;
+                        font-size: 14px;
+                        font-weight: 500;  
+                        background-color: #4c49e0be;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .search{
+                border-bottom: 1px solid gray;
+
+                .searchForm{
+                    padding: 10px;
+
+                    input{
+                        background-color: transparent;
+                        border: none;
+                        color: white;
+                        outline: none;
+
+                        &::placeholder{
+                            color: lightgray;
+                        }
+                    }
+                }
+            }
+
+            .userChat{
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: white;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #201e68;
+                }
+
+                img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .chat{
+            flex:2
+        }
     }
-    
-    .chat{flex:2}
-    .sidebar{flex:1}
 }
