@@ -157,11 +157,42 @@ $color1: #4b49e0;
                     border-radius: 50%;
                     object-fit: cover;
                 }
+
+                .userChatInfo{
+                    span{
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    
+                    p{
+                        font-size: 14px;
+                        color: lightgray;
+                    }
+                }
             }
         }
 
         .chat{
-            flex:2
+            flex:2;
+
+            .chatInfo{
+                height: 50px;
+                background-color: #282683;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                color: lightgray;
+            }
+
+            .chatIcons{
+                display: flex;
+                gap: 10px;
+            }
+
+            img{
+                height: 24px;
+            }
         }
     }
 }
