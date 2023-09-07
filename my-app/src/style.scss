@@ -188,10 +188,11 @@ $color1: #4b49e0;
             .chatIcons{
                 display: flex;
                 gap: 10px;
-            }
 
-            img{
-                height: 24px;
+                img{
+                    width: 24px;
+                    cursor: pointer;
+                }
             }
         }
     }
